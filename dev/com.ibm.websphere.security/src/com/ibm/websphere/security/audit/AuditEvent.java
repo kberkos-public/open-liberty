@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2016 IBM Corporation and others.
+ * Copyright (c) 2016, 2018 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -113,6 +113,15 @@ public class AuditEvent {
     public static final String TARGET_EJB_METHOD_SIGNATURE = "target.ejb.method.signature";
     public static final String TARGET_EJB_BEAN_NAME = "target.ejb.beanname";
     public static final String TARGET_EJB_METHOD_PARAMETERS = "target.ejb.method.parameters";
+
+    public final static String TARGET_SAF_RETURN_CODE = "target.saf.return.code";
+    public final static String TARGET_RACF_RETURN_CODE = "target.racf.return.code";
+    public final static String TARGET_RACF_REASON_CODE = "target.racf.reason.code";
+    public final static String TARGET_USER_SECURITY_NAME = "target.user.security.name";
+    public final static String TARGET_APPLID = "target.applid";
+    public final static String TARGET_SAF_PROFILE = "target.saf.profile";
+    public final static String TARGET_SAF_CLASS = "target.saf.class";
+    public final static String TARGET_MVS_USER_ID = "target.mvs.user.id";
 
     public final static String INITIATOR = "initiator";
     public final static String INITIATOR_ID = "initiator.id";
@@ -568,7 +577,7 @@ public class AuditEvent {
      * Check to see if auditing is required for an event type and outcome.
      *
      * @param eventType SECURITY_AUTHN, SECURITY_AUTHZ, etc
-     * @param outcome OUTCOME_SUCCESS, OUTCOME_DENIED, etc.
+     * @param outcome   OUTCOME_SUCCESS, OUTCOME_DENIED, etc.
      * @return true - events with the type/outcome should be audited
      *         false - events with the type/outcome should not be audited
      *

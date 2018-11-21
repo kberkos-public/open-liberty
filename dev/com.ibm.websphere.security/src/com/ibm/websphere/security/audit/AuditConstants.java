@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2016 IBM Corporation and others.
+ * Copyright (c) 2016, 2018 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -65,6 +65,7 @@ public class AuditConstants {
     static public final String SECURITY_JMS_AUTHZ = "SECURITY_JMS_AUTHZ";
     static public final String SECURITY_JMS_AUTHN_TERMINATE = "SECURITY_JMS_AUTHN_TERMINATE";
     static public final String SECURITY_JMS_CLOSED_CONNECTION = "SECURITY_JMS_CLOSED_CONNECTION";
+    static public final String SECURITY_SAF_AUTH_DETAILS = "SECURITY_SAF_AUTH_DETAILS";
     static public final String JMX_MBEAN = "JMX_MBEAN";
     static public final String JMX_NOTIFICATION = "JMX_NOTIFICATION";
     static public final String JMX_MBEAN_ATTRIBUTES = "JMX_MBEAN_ATTRIBUTES";
