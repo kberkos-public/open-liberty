@@ -17,5 +17,6 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({
                 MPConcurrentTest.class,
+                MPConcurrentCDITest.class
 })
 public class FATSuite {}
